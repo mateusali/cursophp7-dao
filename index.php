@@ -47,11 +47,24 @@ $aluno->insert();
 echo $aluno;
 */
 
-$usuario = new Usuario();
+//Alterar um usuario
+/*$usuario = new Usuario();
 
 $usuario->loadById(8);
 
 $usuario->update("mateus ali", "111119");
 
 echo $usuario;
+
+*/
+
+//DELETER UM USUARIO
+
+$usuario = new Usuario();
+$usuario->loadById(9);
+
+$usuario->delete();
+
+echo $usuario;
+
 ?>
